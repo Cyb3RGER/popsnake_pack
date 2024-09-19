@@ -1,0 +1,53 @@
+{
+  //sets the trackers layout
+  //more info: https://github.com/black-sliver/PopTracker/blob/master/doc/PACKS.md#layouts
+  "tracker_default": {
+    "type": "container",
+    "background": "#000000",
+    "content": {
+      "type": "tabbed",
+      "tabs": [
+        {
+          "title": "Game",
+          "content": {
+            "type": "dock",
+            "dropshadow": true,
+            "content": [
+              {
+                "type": "dock",
+                "dock": "bottom",
+                "v_alignment": "stretch",
+                "content": [
+                  {
+                    "type": "group",
+                    "header": "Items",
+                    "dock": "left",
+                    "content": {
+                      "type": "layout",
+                      "key": "shared_item_grid"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "map",
+                "maps": [
+                  "bg"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "title": "Hints",
+          "content": {
+            "type": "itemgrid",
+            "item_height": 840,
+            "item_width": 1260,
+            "rows": [["hint_display"]]
+          }
+        }
+      ]
+    }
+  }
+}

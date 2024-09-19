@@ -1,0 +1,41 @@
+[
+  //more info: https://github.com/black-sliver/PopTracker/blob/master/doc/PACKS.md#items
+  {
+    "name": "Start Game",
+    "type": "toggle",
+    "img": "images/items/start.png",
+    "img_mods": "@disabled",
+    "disabled_img_mods": "",
+    "initial_active_state": true,
+    "codes": "start"
+  },
+  {
+    "name": "Score",
+    "type": "static",
+    "img": "images/items/score.png",
+    "disabled_img_mods": "",
+    "codes": "score"
+  },
+  {
+    "name": "Placeholder",
+    "type": "toggle",
+    "img": "images/items/placeholder.png",
+    "disabled_img_mods": "",
+    "codes": "placeholder"
+  },
+  {
+    "name": "Logic Update",
+    "type": "toggle",
+    "img": "images/items/down.png",
+    "disabled_img_mods": "",
+    "codes": "update"
+  }
+,
+  {
+    "name": "Hint Display",
+    "type": "toggle",
+    "img": "images/items/placeholder.png",
+    "disabled_img_mods": "",
+    "codes": "hint_display"
+  }
+]

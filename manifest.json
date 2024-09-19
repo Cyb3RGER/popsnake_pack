@@ -1,0 +1,19 @@
+{
+  "name": "PopSnake - A Snake game for PopTracker",
+  "game_name": "PopSnake",
+  "package_version": "1.0.0.0",
+  "package_uid": "popsnake",
+  "platform": "poptracker",
+  "author": "Cyb3R",
+  "min_poptracker_version": "0.28.0",
+  "target_poptracker_version": "0.28.1",
+  "variants": {
+    "standard": {
+      "display_name": "",
+      "flags": [
+        "ap",
+        "aphintgame"
+      ]
+    }
+  }
+}
