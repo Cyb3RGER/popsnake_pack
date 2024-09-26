@@ -22,23 +22,23 @@ function dump_table(o, depth)
 end
 
 function except(a, b)
-	local res = {}
-	for _, av in ipairs(a) do
-		local found_in_b = false
-		for _, bv in ipairs(b) do
-			if av == bv then
-				found_in_b = true
-			end
-		end
-		if not found_in_b then
-			table.insert(res, av)
-		end
-	end
-	return res
+    local res = {}
+    for _, av in ipairs(a) do
+        local found_in_b = false
+        for _, bv in ipairs(b) do
+            if av == bv then
+                found_in_b = true
+            end
+        end
+        if not found_in_b then
+            table.insert(res, av)
+        end
+    end
+    return res
 end
 
 function pick_random(a)
-	return a[math.random(1, #a)]
+    return a[math.random(1, #a)]
 end
 
 function is_ap_connected()
@@ -46,5 +46,5 @@ function is_ap_connected()
 end
 
 function trim(s)
-  return (string.gsub(s, "^%s*(.-)%s*$", "%1"))
+    return (string.gsub(s, "^%s*(.-)%s*$", "%1"))
 end
