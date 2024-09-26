@@ -38,7 +38,6 @@ TRACKER_OBJ_CODES = {
 	"score", "update"
 }
 TRACKER_OBJS = {}
-SCORE_FOR_HINT = 5
 --game logic
 GRID_VAL_ACCESS_MAPPING = {
 	[GRID_STATES.EMPTY] = AccessibilityLevel.Inspect,
@@ -190,9 +189,17 @@ function add_score(val)
 	end
 	GAME_STATE.score = GAME_STATE.score + val
 	update_score()
-	if GAME_STATE.score % SCORE_FOR_HINT == 0 and GAME_STATE.score > 0 then
+	if GAME_STATE.score % get_score_needed() == 0 and GAME_STATE.score > 0 then
 		trySendHint()
 	end
+end
+
+function get_score_needed()
+    local obj = Tracker:FindObjectForCode("score_needed")
+    if obj then
+        return obj.AcquiredCount
+    end
+    return 10
 end
 
 function reset_score()

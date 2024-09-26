@@ -29,13 +29,23 @@
     "img": "images/items/down.png",
     "disabled_img_mods": "",
     "codes": "update"
-  }
-,
+  },
   {
     "name": "Hint Display",
     "type": "toggle",
     "img": "images/items/placeholder.png",
     "disabled_img_mods": "",
     "codes": "hint_display"
+  },
+  {
+    "name": "Score needed per Hint",
+    "type": "consumable",
+    "initial_quantity": 10,
+    "max_quantity": 50,
+    "min_quantity": 5,
+    "increment": 5,
+    "img": "images/items/placeholder_2.png",
+    "overlay_font_size": "24",
+    "codes": "score_needed"
   }
 ]

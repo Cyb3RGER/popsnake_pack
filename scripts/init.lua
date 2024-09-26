@@ -26,6 +26,7 @@ Tracker:AddLocations("locations/locations.jsonc")
 -- Layout
 Tracker:AddLayouts("layouts/items.jsonc")
 Tracker:AddLayouts("layouts/tracker.jsonc")
+Tracker:AddLayouts("layouts/settings.jsonc")
 
 require "scripts.logic.archipelago"
 
