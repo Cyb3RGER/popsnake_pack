@@ -45,7 +45,7 @@
     "min_quantity": 5,
     "increment": 5,
     "img": "images/items/placeholder_2.png",
-    "overlay_font_size": "24",
+    "overlay_font_size": 24,
     "codes": "score_needed"
   }
 ]
