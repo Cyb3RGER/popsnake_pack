@@ -1,0 +1,12 @@
+{
+  "versions": [
+    {
+      "package_version": "1.0.0",
+      "download_url": "https://github.com/Cyb3RGER/popsnake_pack/releases/download/v1.0.0/popsnake_pack-v1_0_0.zip",
+      "sha256": "a6be811e18aa89d4e0a85b576af88b8f4a4d4aad8cb8863e85ff2d59ed0b2f61",
+      "changelog": [
+        "Initial Release"
+      ]
+    }
+  ]
+}
